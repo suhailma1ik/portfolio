@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `Suhail Malik`,
+    siteTitleAlt: `Suhail Malik — Software Engineer`,
+    siteHeadline: `Product-minded software engineer building scalable products from 0 → 1.`,
+    siteUrl: `https://suhailmalik.dev`,
+    siteDescription: `Suhail Malik is a product-minded software engineer building scalable products, developer tools, and AI-powered workflows.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `Suhail Malik`,
   },
   trailingSlash: `always`,
   plugins: [
@@ -27,9 +27,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Suhail Malik — Software Engineer`,
+        short_name: `Suhail Malik`,
+        description: `Product-minded software engineer building scalable products from 0 → 1.`,
         start_url: `/`,
         background_color: `#141821`,
         // This will impact how browsers show your PWA/website
