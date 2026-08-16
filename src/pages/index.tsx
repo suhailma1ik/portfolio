@@ -12,6 +12,7 @@ const work = [
     label: "Navi · 0 → 1 infrastructure",
     copy: "A reusable React + TypeScript SDK that brought advertising experiences into customer journeys across Personal Loans and AMC—with reliable analytics built in.",
     metrics: ["60% less onboarding effort", ">99% event delivery"],
+    proof: ["Role: product engineer", "Built: React + TypeScript SDK", "Outcome: new revenue surface"],
     kind: "sdk",
     href: "/case-studies/#ads-sdk",
   },
@@ -21,6 +22,7 @@ const work = [
     label: "Navi · systems & performance",
     copy: "Reworked session handling from UUIDs to JWT-backed tokens with ElastiCache, making authentication both faster and ready for serious throughput.",
     metrics: ["20ms → 2ms latency", "~1.2M req/min"],
+    proof: ["Role: systems owner", "Built: JWT + Redis session path", "Outcome: 10× lower latency"],
     kind: "systems",
     href: "/case-studies/#session-service",
   },
@@ -30,6 +32,7 @@ const work = [
     label: "Navi · browser behavior",
     copy: "Redesigned a Personal Loan popup flow around real browser constraints, moving critical work earlier and ensuring the interaction stayed user initiated.",
     metrics: ["₹73 Cr/month estimated uplift", "A/B tested"],
+    proof: ["Role: funnel engineer", "Built: browser-safe interaction", "Outcome: tested conversion lift"],
     kind: "funnel",
     href: "/case-studies/#funnel-optimization",
   },
@@ -39,6 +42,7 @@ const work = [
     label: "Navi · internal tooling",
     copy: "Improved complex operations tooling built with React Flow—reducing slow paths, on-call load, and the time teams needed to resolve incidents.",
     metrics: ["8s → 2s workflows", "80–90% faster resolution"],
+    proof: ["Role: platform engineer", "Built: faster graph workflows", "Outcome: lower on-call load"],
     kind: "flow",
     href: "/case-studies/#workflow-platform",
   },
@@ -52,7 +56,8 @@ const principles = [
 ]
 
 const IndexPage = (_props: PageProps) => (
-  <main>
+  <>
+    <a className="skip-link" href="#main-content">Skip to content</a>
     <nav className="nav" aria-label="Primary navigation">
       <a className="wordmark" href="#top" aria-label="Suhail Malik home">SM<span>·</span></a>
       <div className="nav-links">
@@ -65,14 +70,18 @@ const IndexPage = (_props: PageProps) => (
       <a className="nav-contact" href="https://www.linkedin.com/in/suhailma1ik/" target="_blank" rel="noreferrer">Let’s talk <Arrow /></a>
     </nav>
 
-    <section className="hero" id="top">
+    <main id="main-content">
+    <section className="hero" id="top" aria-labelledby="intro-title">
       <p className="eyebrow reveal">Suhail Malik <i /> Bengaluru, India</p>
       <div className="hero-grid">
-        <h1 className="reveal reveal-2">I build products<br />that <em>move</em> things<br />forward.</h1>
+        <h1 className="reveal reveal-2" id="intro-title">I build products<br />that <em>move</em> things<br />forward.</h1>
         <div className="hero-side reveal reveal-3">
           <p>Product-minded software engineer with frontend depth, systems range, and a bias for 0 → 1 ownership.</p>
-          <a className="text-link" href="#work">Explore selected work <Arrow /></a>
-          <a className="text-link secondary-link" href="/Suhail-Malik-Resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
+          <div className="hero-actions">
+            <a className="hero-cta" href="mailto:suhailmalik2000@gmail.com">Start a conversation <Arrow /></a>
+            <a className="text-link secondary-link" href="/Suhail-Malik-Resume.pdf" target="_blank" rel="noreferrer">View résumé <span className="sr-only">(opens in a new tab)</span> ↗</a>
+          </div>
+          <a className="text-link hero-work-link" href="#work">Explore selected work <Arrow /></a>
         </div>
       </div>
       <div className="hero-footer reveal reveal-4">
@@ -110,6 +119,9 @@ const IndexPage = (_props: PageProps) => (
             <div className="work-metrics">
               {item.metrics.map((metric) => <span key={metric}>{metric}</span>)}
             </div>
+            <ul className="work-proof" aria-label={`${item.title} project summary`}>
+              {item.proof.map((point) => <li key={point}>{point}</li>)}
+            </ul>
           </article>
         ))}
       </div>
@@ -137,7 +149,8 @@ const IndexPage = (_props: PageProps) => (
           <a className="text-link clipify-link" href="https://clipify.space/" target="_blank" rel="noreferrer">Visit Clipify <Arrow /></a>
         </div>
         <a className="clipify-shot" href="https://clipify.space/" target="_blank" rel="noreferrer">
-          <img src="https://clipify.space/og-image.svg" alt="Clipify, an AI assistant for browser text transformations" />
+          <img src="/clipify-preview.svg" width="1200" height="720" loading="lazy" decoding="async" alt="Clipify turns a selected release note into a clearer, technically accurate result." />
+          <span>Preview of the shortcut-first writing workflow <span className="sr-only">(opens Clipify in a new tab)</span></span>
         </a>
       </div>
       <div className="clipify-foot">
@@ -180,7 +193,8 @@ const IndexPage = (_props: PageProps) => (
       <a className="footer-cta" href="mailto:suhailmalik2000@gmail.com">Email Suhail <Arrow /></a>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} Suhail Malik</span><span><a href="https://github.com/suhailma1ik" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/suhailma1ik/" target="_blank" rel="noreferrer">LinkedIn</a></span></div>
     </footer>
-  </main>
+    </main>
+  </>
 )
 
 export default IndexPage
@@ -194,6 +208,12 @@ export const Head: HeadFC = () => (
     <meta property="og:title" content="Suhail Malik — Product-minded Software Engineer" />
     <meta property="og:description" content="Scalable products, developer tools, and AI-powered workflows." />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="https://suhailmalik.dev/" />
+    <meta property="og:image" content="https://suhailmalik.dev/social-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Suhail Malik — Product-minded Software Engineer" />
+    <meta name="twitter:description" content="Scalable products, developer tools, and AI-powered workflows." />
+    <meta name="twitter:image" content="https://suhailmalik.dev/social-card.svg" />
+    <link rel="canonical" href="https://suhailmalik.dev/" />
   </>
 )

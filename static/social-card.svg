@@ -1,0 +1,10 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#162217"/>
+  <circle cx="1080" cy="82" r="200" fill="#D8F66F" opacity=".9"/>
+  <circle cx="1052" cy="522" r="140" fill="#E75E38"/>
+  <text x="80" y="106" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="34" font-weight="700">SM<tspan fill="#E75E38">·</tspan></text>
+  <text x="80" y="264" fill="#F4F1E9" font-family="Georgia, serif" font-size="88">Suhail Malik</text>
+  <text x="80" y="356" fill="#D8F66F" font-family="Georgia, serif" font-size="62">Product-minded</text>
+  <text x="80" y="426" fill="#F4F1E9" font-family="Georgia, serif" font-size="62">software engineer.</text>
+  <text x="84" y="530" fill="#BDc8B9" font-family="Arial, sans-serif" font-size="28">Frontend depth · systems range · 0 → 1 ownership</text>
+</svg>

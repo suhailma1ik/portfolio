@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
     siteHeadline: `Product-minded software engineer building scalable products from 0 → 1.`,
     siteUrl: `https://suhailmalik.dev`,
     siteDescription: `Suhail Malik is a product-minded software engineer building scalable products, developer tools, and AI-powered workflows.`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/social-card.svg`,
     siteLanguage: `en`,
     author: `Suhail Malik`,
   },

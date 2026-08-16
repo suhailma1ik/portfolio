@@ -1,0 +1,24 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#F4F1E9"/>
+  <rect x="48" y="48" width="1104" height="624" rx="16" fill="#FCFBF7" stroke="#162217" stroke-width="3"/>
+  <rect x="48" y="48" width="1104" height="68" rx="16" fill="#162217"/>
+  <path d="M48 100H1152V116H48V100Z" fill="#162217"/>
+  <circle cx="86" cy="82" r="8" fill="#D8F66F"/>
+  <circle cx="112" cy="82" r="8" fill="#E75E38"/>
+  <text x="148" y="89" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="22" font-weight="700">Clipify</text>
+  <text x="116" y="202" fill="#526052" font-family="Arial, sans-serif" font-size="22">Selected text</text>
+  <text x="116" y="257" fill="#162217" font-family="Georgia, serif" font-size="42">Make this release note more direct</text>
+  <rect x="108" y="275" width="734" height="53" fill="#D8F66F"/>
+  <text x="116" y="312" fill="#162217" font-family="Georgia, serif" font-size="32">while keeping its technical accuracy.</text>
+  <rect x="819" y="180" width="229" height="91" rx="10" fill="#162217"/>
+  <text x="850" y="220" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="18">⌘</text>
+  <text x="880" y="220" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="18">Shift</text>
+  <text x="956" y="220" fill="#D8F66F" font-family="Arial, sans-serif" font-size="18">K</text>
+  <text x="850" y="250" fill="#BDc8B9" font-family="Arial, sans-serif" font-size="15">Open Clipify</text>
+  <path d="M163 405H1000" stroke="#D7D6CA" stroke-width="3"/>
+  <text x="116" y="466" fill="#526052" font-family="Arial, sans-serif" font-size="22">Result</text>
+  <text x="116" y="526" fill="#162217" font-family="Georgia, serif" font-size="40">Ship a technically accurate, clearer release note.</text>
+  <rect x="116" y="565" width="210" height="52" rx="26" fill="#162217"/>
+  <text x="146" y="599" fill="#F4F1E9" font-family="Arial, sans-serif" font-size="18" font-weight="700">Copy result</text>
+  <text x="1006" y="610" text-anchor="end" fill="#526052" font-family="Arial, sans-serif" font-size="18">A focused workflow, no context switch.</text>
+</svg>
