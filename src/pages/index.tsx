@@ -57,6 +57,8 @@ const IndexPage = (_props: PageProps) => (
       <a className="wordmark" href="#top" aria-label="Suhail Malik home">SM<span>·</span></a>
       <div className="nav-links">
         <a href="#work">Work</a>
+        <a href="/notes/">Notes</a>
+        <a href="/Suhail-Malik-Resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
         <a href="#approach">Approach</a>
         <a href="#about">About</a>
       </div>
@@ -70,6 +72,7 @@ const IndexPage = (_props: PageProps) => (
         <div className="hero-side reveal reveal-3">
           <p>Product-minded software engineer with frontend depth, systems range, and a bias for 0 → 1 ownership.</p>
           <a className="text-link" href="#work">Explore selected work <Arrow /></a>
+          <a className="text-link secondary-link" href="/Suhail-Malik-Resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
         </div>
       </div>
       <div className="hero-footer reveal reveal-4">
@@ -115,9 +118,9 @@ const IndexPage = (_props: PageProps) => (
     <section className="notes section" id="notes">
       <div className="section-heading"><p className="eyebrow">Engineering notes</p><p>Patterns from the sharp end of product work.</p></div>
       <div className="notes-list">
-        <a href="/case-studies/#ads-sdk"><span>01</span><div><p>Client-side infrastructure</p><h3>Reliability belongs in the SDK, not in every integration.</h3></div><Arrow /></a>
-        <a href="/case-studies/#funnel-optimization"><span>02</span><div><p>Browser behavior</p><h3>Small interaction details can be a product constraint—not a UI detail.</h3></div><Arrow /></a>
-        <a href="/case-studies/#session-service"><span>03</span><div><p>Systems thinking</p><h3>Performance work earns its place when it removes friction at scale.</h3></div><Arrow /></a>
+        <a href="/notes/#reliable-analytics"><span>01</span><div><p>Client-side infrastructure</p><h3>Reliability belongs in the SDK, not in every integration.</h3></div><Arrow /></a>
+        <a href="/notes/#browser-behavior"><span>02</span><div><p>Browser behavior</p><h3>Small interaction details can be a product constraint, not a UI detail.</h3></div><Arrow /></a>
+        <a href="/notes/#performance"><span>03</span><div><p>Systems thinking</p><h3>Performance work earns its place when it removes friction at scale.</h3></div><Arrow /></a>
       </div>
     </section>
 
@@ -131,13 +134,11 @@ const IndexPage = (_props: PageProps) => (
           <p className="clipify-kicker">Meet Clipify</p>
           <h2>AI that stays<br />in your <em>flow.</em></h2>
           <p className="clipify-copy">A shortcut-first writing assistant that turns repetitive AI prompts into a system-wide action. Select text, use a hotkey, paste the result—without breaking concentration.</p>
+          <a className="text-link clipify-link" href="https://clipify.space/" target="_blank" rel="noreferrer">Visit Clipify <Arrow /></a>
         </div>
-        <div className="clipify-demo" aria-label="Clipify workflow illustration">
-          <div className="selection">Make this sound more confident</div>
-          <div className="shortcut"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>C</kbd><span>Rephrase</span></div>
-          <div className="output">Turn a thought into a clearer, more confident point of view.</div>
-          <div className="demo-path" aria-hidden="true"><i /><i /><i /></div>
-        </div>
+        <a className="clipify-shot" href="https://clipify.space/" target="_blank" rel="noreferrer">
+          <img src="https://clipify.space/og-image.svg" alt="Clipify, an AI assistant for browser text transformations" />
+        </a>
       </div>
       <div className="clipify-foot">
         <span>React + TypeScript</span><span>Tauri 2.0</span><span>Go Fiber</span><span>Chrome extension</span><span>500+ users</span>
@@ -161,7 +162,12 @@ const IndexPage = (_props: PageProps) => (
         <div>
           <p>At Navi, I’ve moved between customer funnels, frontend infrastructure, security hardening, localization, backend services, and developer tooling. Before that, I built mobile products with React Native at Phurti and Neurobit.</p>
           <p>I’m drawn to ambitious teams building AI products, developer tools, SaaS, and technically demanding user-facing software.</p>
-          <div className="skill-row"><span>Frontend systems</span><span>Backend & infra</span><span>Developer tools</span><span>AI-native workflows</span></div>
+          <div className="capabilities" aria-label="Core capabilities">
+            <div><strong>Frontend systems</strong><span>React · TypeScript · performance</span></div>
+            <div><strong>Backend & infra</strong><span>Go · Redis · PostgreSQL · cloud</span></div>
+            <div><strong>Developer tools</strong><span>SDKs · testing · internal platforms</span></div>
+            <div><strong>AI-native workflows</strong><span>planning · testing · diagnostics</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -170,8 +176,9 @@ const IndexPage = (_props: PageProps) => (
       <p className="eyebrow">The next useful thing</p>
       <h2>Let’s build something<br /><em>ambitious.</em></h2>
       <p className="footer-copy">I’m always interested in hard product problems, high-ownership teams, and ideas that deserve to exist.</p>
-      <a className="footer-cta" href="https://www.linkedin.com/in/suhailma1ik/" target="_blank" rel="noreferrer">Connect on LinkedIn <Arrow /></a>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} Suhail Malik</span><span>Designed and built with intent.</span></div>
+      <p className="availability">Open to thoughtful product and engineering conversations.</p>
+      <a className="footer-cta" href="mailto:suhailmalik2000@gmail.com">Email Suhail <Arrow /></a>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} Suhail Malik</span><span><a href="https://github.com/suhailma1ik" target="_blank" rel="noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/suhailma1ik/" target="_blank" rel="noreferrer">LinkedIn</a></span></div>
     </footer>
   </main>
 )
@@ -184,5 +191,9 @@ export const Head: HeadFC = () => (
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>Suhail Malik — Product-minded Software Engineer</title>
     <meta name="description" content="Suhail Malik is a product-minded software engineer building scalable products, developer tools, and AI-powered workflows." />
+    <meta property="og:title" content="Suhail Malik — Product-minded Software Engineer" />
+    <meta property="og:description" content="Scalable products, developer tools, and AI-powered workflows." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
   </>
 )

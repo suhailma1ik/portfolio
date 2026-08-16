@@ -31,10 +31,10 @@ const config: GatsbyConfig = {
         short_name: `Suhail Malik`,
         description: `Product-minded software engineer building scalable products from 0 → 1.`,
         start_url: `/`,
-        background_color: `#141821`,
+        background_color: `#1d3b2b`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#f6ad55`,
+        theme_color: `#1d3b2b`,
         display: `standalone`,
         icons: [
           {
