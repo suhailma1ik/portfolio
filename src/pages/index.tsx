@@ -111,8 +111,8 @@ const IndexPage = (_props: PageProps) => (
               <p>{item.copy}</p>
             </div>
             <div className="work-visual" aria-hidden="true">
-              {item.kind === "sdk" && <><span className="node n1" /><span className="node n2" /><span className="node n3" /><i /><b /></>}
-              {item.kind === "systems" && <><strong>JWT</strong><i /><span>Redis</span><b>2ms</b></>}
+              {item.kind === "sdk" && <div className="sdk-diagram"><div className="sdk-source">App</div><div className="sdk-core">Ads SDK</div><div className="sdk-event sdk-event-one">view</div><div className="sdk-event sdk-event-two">click</div><div className="sdk-caption">event delivery</div></div>}
+              {item.kind === "systems" && <div className="session-diagram"><div className="session-step session-client">request</div><div className="session-step session-jwt">JWT</div><div className="session-step session-cache">Redis</div><div className="session-caption">session lookup</div><div className="session-latency">2ms</div></div>}
               {item.kind === "funnel" && <><i /><i /><i /><b>✓</b></>}
               {item.kind === "flow" && <><span /><span /><span /><i /><i /></>}
             </div>
